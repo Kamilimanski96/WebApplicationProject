@@ -1,3 +1,11 @@
+.recipe-container-full-desc{
+    width: 80%;
+    max-width: 1200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .recipe-upper-container{
     width:100%;
     height:auto;
