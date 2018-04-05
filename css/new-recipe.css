@@ -1,0 +1,289 @@
+.new-recipe-container{
+    width:80%;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #fdfdfd;
+    margin-bottom: 100px;
+}
+.new-recipe-container h1{
+    font-family: 'Amatic SC', cursive;
+    color: #fed716;
+    text-shadow: 0.5px 1px 1px 0.5px #000;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+    margin:0;
+}
+.new-recipe-left-info{
+    width: 70%;
+    float:left;
+    margin:0;
+    padding-top:15px;
+}
+.new-recipe-right-info{
+    width: 30%;
+    float:left;
+    margin:0;
+}
+.new-recipe-right-info p{
+    margin: 5px;
+}
+#recipe-name {
+    width: 50%;
+    height: 30px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:auto;
+    margin-right: 10px;
+    border-radius: 2px 2px 2px 2px;
+ 
+    -webkit-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    transition: width  0.4s ease-in-out;
+}
+#recipe-name:focus {
+  width: 80%;
+}
+#recipe-description-textarea {
+  width: 50%;
+  height: 50px;
+
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width height 0.4s  ease-in-out;
+  transition: height 0.4s  ease-in-out;
+}
+#recipe-description-textarea:focus{
+  width: 80%;
+  height: 200px;
+}
+
+.new-recipe-left-info textarea {
+    width: 80%;
+    height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:auto;
+    margin-right: 10px;
+    font-size: 16px;
+    border-radius: 2px 2px 2px 2px;
+}
+.new-recipe-container hr {
+    border: 0.5px solid #b7b7bc;
+    width: 95%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left:auto;
+    margin-right: auto;
+    box-shadow:  1px 1px 10px 0.5px #b7b7bc;
+}
+
+.necessary-ingridients {
+    width: 100%;
+    margin-left:0;
+    height: auto;
+    padding: 0;
+}
+
+#list-of-ingridients {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+#list-of-ingridients li {
+  cursor: pointer;
+  position: relative;
+  height: 28px;
+  width: 55%;
+  padding: 4px 20px 4px 40px; 
+  list-style-type: none;
+  background: #fefefe;
+  border: 0.5px solid #eee;
+  font-size: 16px;
+  transition: 0.4s;
+  margin-bottom: 0.25px;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#list-of-ingridients li:nth-child(odd) {
+  background: #fdfdfd;
+}
+
+#list-of-ingridients li:hover {
+  background: #f9f9f9;
+}
+
+/* When clicked on, add a background color and strike out text 
+.necessary-ingridients ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+*/
+
+#list-of-ingridients li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+ /* padding: 4px 4px 4px 4px; */
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
+.ingridients-input {
+  border: 1px solid #000;
+  width: 30%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn{
+  padding:9.5px;
+  width: 10%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #000;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+
+
+
+/* tworzenie listy potrzebnych kroków */
+.necessary-steps{
+    width: 100%;
+    margin-left:0;
+    height: auto;
+    padding: 0;
+}
+ 
+
+.add-step-btn {
+  padding:9.5px;
+  width: 10%;
+  height: 60px;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #000;
+}
+.add-step-btn:hover {
+  background-color: #bbb;
+}
+
+#step-input-area {
+  border: 1px solid #000;
+  width: 55%;
+  height: 60px;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+
+#sample-step{
+  list-style-type: none;
+  text-decoration: none;
+  margin:0;
+  padding:0;
+}
+
+#sample-step li {
+  position: relative;
+  padding: 10px 10px;
+  height: 60px;
+  width: 55%;
+  font-size: 16px;
+  transition: 0.4s;
+  margin-bottom:10px;
+  border: 1px solid #000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+
+
+
+
+/* image browser */
+.upload-images {
+  width: 100%;
+  margin:0;
+
+}
+.single-image-browser {
+  padding:5px;
+  width:30%;
+  height: auto;
+  float: left;
+}
+.meal-image{
+  width: 90%;
+  height: auto;
+  border-radius: 20%;
+  max-width: 90%;
+}
+#browser{
+  width: 60%;
+  height: 30px;
+  font-size: 16px;
+  padding: 4px 4px 4px 4px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #000;
+  border-radius: 4px 4px 4px 4px;
+}
+
+#save-meal{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  font-size: 20px;
+  color: #0f0f0f;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ededed;
+  border: 1px solid #000;
+  box-shadow: 1px 2px 2px 0.2px #000;
+  font-weight: 500;
+  cursor: pointer;
+}

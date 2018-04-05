@@ -1,0 +1,89 @@
+.recipe-upper-container{
+    width:100%;
+    height:auto;
+    min-height: 600px;
+    margin: 0;
+    padding: 0;
+}
+.left-desc{
+    width: 30%;
+    height:100%;
+    margin:0;
+    float:left;
+    background-color: #fff;
+    padding: 0 auto auto 30px;
+}
+.right-desc{
+    width:70%;
+    height: auto;
+    margin:0;
+    float: left;
+}
+.single-recipe-icon {
+    color:#000;
+    font-size: 25px;
+
+    -webkit-transition: width height 0.4s ease-in-out;
+    -moz-transition: width height 0.4s ease-in-out;
+    transition: width height 0.4s ease-in-out;
+}
+.single-recipe-icon:hover {
+    font-size: 30px;
+}
+.single-recipe-icon:hover{
+    text-shadow: 0.5px 0.5px 0.2px 0.2px #000;
+    cursor: pointer;
+}
+icon-user-o single-recipe-icon:hover{
+    color: #6697e8;
+}
+.recipe-upper-container h1{
+    font-family: 'Amatic SC', cursive;
+    color: #fed716;
+    text-shadow: 0.2px 1px 1px 0.5px #000;
+    font-weight: 1100;
+    font-size: 50px;
+    text-align: center;
+}
+#overall-desc{
+    background-color: #fcfcfc;
+    width:100%;
+    height: 100%;
+    margin-top: 30px;
+}
+#overall-desc h3{
+    font-family: 'Amatic SC';
+    font-size: 30px;
+    font-weight: 900;
+    color: #0f0f0f;
+    margin-bottom: 0;
+}
+.recipe-upper-container .right-desc img {
+    min-width:100%;
+    max-width:800px;
+    max-height:600px;
+    min-height: 100%;
+    height: auto;
+
+}
+.recipe-steps{
+    width: 50%;
+    height: auto;
+    min-height:300px;
+    padding: 20px auto auto 20px;
+    float: left;
+
+}
+.recipe-steps h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin: 0 auto 5px 5px;
+}
+#id_of_your_comment_container{
+    height: auto;
+    float:left;
+    width:50%;
+    height:auto;
+    margin-top: 0;
+    margin-bottom: 100px;
+}

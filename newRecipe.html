@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Yourrrrecipes</title>
+      <meta charset="UTF-8">
+
+      <!-- my CSS files -->
+      <link href="css/menu.css" type="text/css" rel="stylesheet" />
+      <link href="css/footer.css" type="text/css" rel="stylesheet"/>
+      <link href="css/body.css" type="text/css" rel="stylesheet"  />
+      <link href="css/login.css" type="text/css" rel="stylesheet"/>
+      <link href="css/user-account.css" type="text/css" rel="stylesheet" />
+      <link href="css/new-recipe.css" type="text/css" rel="stylesheet" />
+
+      <!-- linked fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+
+      <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script" rel="stylesheet" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+      <link href="fonts/css/fontello.css" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Monoton|Pacifico" rel="stylesheet" />
+
+   </head>
+
+   <!-- menu beginning -->
+	
+   <body onload="startTimer()">
+
+     <div class="topBarContainer" id="upperNavigation" >
+            <div class="topBar">
+                <div class="topBarMenu">
+                    <div class="tbmBtn"><a href="#"> Kontakt</a> </div>
+                    <div class="tbmBtn"><a href="#"> Pomoc</a> </div>
+                </div>
+            </div>
+            <hr/>
+            <div class="middleBar" >
+                <div class="middleBarMenu">
+                    <div class="mbmLogo"><a href="menu.html">Recipes<br>Limited Edition</a></div>
+                    <div class="mbmSearch">
+                        <div class="searchContainer">
+                            <form name="navForm" action="#" method="POST">
+                                <input type="text" placeholder="Wyszukaj..." id="navSearch" name="navigationSearch" class="text"/>
+                                <button type="submit" class="searchBtn" ><i class="icon-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="mbmAddRecipe">
+                        <div class="navRC">
+                            <a><i class="icon-food"></i></a>
+                            <p >Dodaj Przepis</p>
+                        </div>
+                    </div>
+
+                    <!-- doing user -->
+
+                    <div class="mbmUser"><a href="#">
+                        <div class="navUser">
+                            <a><i class="icon-user-o"></i></a>
+                            <p >Uzytkownik</p>
+                            <div class="dropdown-content-user">
+                                 <div class="rowUser">
+                                    <div class="columnUser">
+
+                                        <!-- user Login -->
+
+                                    <button onclick="document.getElementById('id01').style.display='block'" 
+                                        style="width:auto;margin-left:auto;margin-right:auto;font-size:14px;background-color:#ddd; margin:0;" id="login-button">Logowanie</button>
+                                            <div id="id01" class="modal">
+                                                <form class="modal-content animate" action="#">
+                                                    <div class="imgcontainer">
+                                                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                                        <img src="img/avatar.png" alt="Avatar" class="avatar">
+                                                    </div>
+
+                                                    <div class="login-container">
+                                                        <label for="uname"><b>Username</b></label>
+                                                        <input type="text" class="input-name" placeholder="Enter Username" name="uname" required>
+
+                                                        <label for="psw"><b>Password</b></label>
+                                                        <input type="password" class="input-password" placeholder="Enter Password" name="psw" required>
+                                                            
+                                                        <button type="submit">Login</button>
+                                                         <label>
+                                                            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"><span style="color:#000;font-size:12px;">Remember me</span><br/>
+                                                            <span class="psw">Forgot <a href="#">password?</a></span>
+                                                        </label>
+
+                                                    </div>
+
+                                                    <div class="login-container" style="background-color:#f1f1f1">
+                                                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                                       
+                                                    </div>
+                                            </form>
+                                         </div>
+
+                                         <!-- user registration -->
+
+                                    <button onclick="document.getElementById('id02').style.display='block'"
+                                        style="width:auto;width:auto;margin-left:auto;margin-right:auto;font-size:14px;background-color:#ddd; margin:0;" id="registration-button">Rejestracja</button>
+                                        <div id="id02" class="modal">
+                                            <form class="modal-content animate" action="#">
+                                                <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                                                <div class="registration-container">
+                                               
+                                                    <h1 style="color:#000;font-size:36px;">Sign Up</h1>
+                                                    <p style="color:#000; font-size:20px">Please fill in this form to create an account.</p>
+                                                    <hr>
+                                                    <label for="email"><b>Email</b></label>
+                                                    <input type="text" placeholder="Enter Email" class="input-password" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+
+                                                    <label for="psw"><b>Password</b></label>
+                                                    <input type="password" class="input-password" placeholder="Enter Password" name="psw" required>
+
+                                                    <label for="psw-repeat"><b>Repeat Password</b></label>
+                                                    <input type="password" class="input-password" placeholder="Repeat Password" name="psw-repeat" required>
+                                                    
+                                                    <label>
+                                                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"><span style="color:#000;font-size:12px;">Remember me</span>
+                                                    </label>
+
+                                                    <p style="color:#000;">By creating an account you agree to our <a href="other/policy_terms.pdf" style="color:dodgerblue" download="">Terms & Privacy</a>.</p>
+
+                                                    <div class="clearfix">
+                                                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                                                        <button type="submit" class="signupbtn">Sign Up</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                <div style="clear:both;"></div>
+                </div>
+            </div>
+            <hr/>
+            <div class="lowerBar">
+                <div class="lowerBarMenu">
+                    <div class="lbmBtn">
+                        <a class="recipesNavTop">Przepisy</a>
+                        <div class="dropdown-content">
+                            <div class="row">
+                                <div class="column"></div>
+                                <div class="column">
+                                    <h3>Rodzaje dan</h3>    
+                                     <a href="#">Sniadanie</a>
+                                     <a href="#">Danie glowne</a>
+                                     <a href="#">Zupy</a>
+                                     <a href="#">Desery</a>
+                                     <a href="#">Kolacje</a>
+                                </div>
+                                <div class="column">
+                                    <h3>Typy kuchni</h3>    
+                                     <a href="#">Kuchnia Polska</a>
+                                     <a href="#">Kuchnia Francuska</a>
+                                     <a href="#">Kuchnia Wloska</a>
+                                     <a href="#">Kuchnia Amerykanska</a>
+                                     <a href="#">Kuchnia Meksykanska</a>
+                                     <a href="#">Kuchnia Azjatycka</a>
+                                     <a href="#">Kuchnia Czeska</a>
+                                     <a href="#">Kuchnia Hiszpanska</a>
+                                </div>
+                                <div class="column">
+                                    <h3>Rodzaje diet</h3>    
+                                     <a href="#">Dieta Paleo</a>
+                                     <a href="#">Dieta Bezglutenowe</a>
+                                     <a href="#">Bez dieta</a>
+                                     <a href="#">Dieta vege</a>
+                                </div>
+                                <div class="column"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       <div style="margin: 200px 0"> </div>
+
+
+
+
+       <!-- the basic page content -->     
+
+       <div class="new-recipe-container">
+            
+                <h1>Informacje podstawowe</h1>
+                <div class="new-recipe-left-info" >
+                    <p>Nazwa dania</p>
+                    <input type="text" id="recipe-name" placeholder="Nazwa Dania" ><br/>
+                    <p>Krótki opis proponowanego dania</p>
+                    <div style="width:100%;margin-top:10px;"></div>
+                    <textarea  id="recipe-description-textarea" placeholder="opis dania" ></textarea>
+                </div>
+                <div class="new-recipe-right-info">
+                    <h3>Rodzaj diety</h3>
+                    <input type="checkbox" name="vegan">Vege/Wegetarian<br/>
+                    <input type="checkbox" name="lacto">Bez laktozy<br/>
+                    <input type="checkbox" name="gluten">Bez glutenu<br/>
+                    <input type="checkbox" name="paleo">Paleo
+                </div>
+                <div style="clear:both;margin:20px;"></div>
+                <hr  />
+
+                <div class="necessary-ingridients">
+                    <h1>Potrzebne składniki</h1>
+                    <div id="ing-header">
+                        <input type="text" class="ingridients-input" id="ingridient-input" placeholder="Następny składnik">
+                        <span onclick="newElement()" class="addBtn">Dodaj</span>
+                    </div>
+
+                    <div style="clear:both;margin:50px;width:100%;"></div>
+
+                    <ul id="list-of-ingridients">
+                    </ul>
+
+                </div>
+               <div style="clear:both;width:100%;margin-top:50px;"></div>
+                <hr  />
+
+
+                <div class="necessary-steps">
+                    <h1>Lista Kroków do zrobienia </h1>
+                    <div id="ing-header">
+                        <textarea placeholder="Dodaj kolejny krok" class="next-step-area" id="step-input-area" ></textarea>
+                        <span onclick="nextStep()" class="add-step-btn">Dodaj Następny Krok</span>
+                    </div>
+                <div style="clear:both;width:100%;margin-top:100px;"></div>
+                    
+                    <ul id="sample-step" >
+                    </ul>
+
+                </div>
+
+                <div style="clear:both;width:100%;margin-top:50px;"></div>
+                <hr  />
+
+                <div class="upload-images">
+                    <h1>Dodaj zdjęcia posiłków</h1>
+                    <div style="clear:both;width:100%;margin-top:50px;"></div>
+
+                    <div class="single-image-browser">
+                        <img src="img/meal-avatar.png" id="brows-1" class="meal-image"   />
+                    </div>
+                    <div class="single-image-browser">
+                        <img src="img/meal-avatar.png" class="meal-image" id="brows-2"   />
+                    </div>
+                    <div class="single-image-browser">
+                        <img src="img/meal-avatar.png" class="meal-image" id="brows-3"   />
+                    </div>
+                    <input type="file"  id="browser"  value="Wybierz" onchange="loadImageFiles();" />
+
+                </div>
+                <div style="clear:both; width:100%; margin-top:100px;"></div>
+                <hr  />
+
+             <div style="width:52%;height:auto; margin-left:auto;margin-right:auto;">
+                    <button type="submit" id="save-meal" name="save">ZAPISZ</button>
+            </div>
+
+       </div>
+
+
+
+
+       <!-- here the footer begins!!! -->
+
+       <div class="space" style="width:100%;height:100px"></div>
+       <footer>
+            <div class="newsletter">
+                
+                <div class="rightNewsletter">
+                    <p id="bigNews">NEWSLETTER</p>
+                    <p id="smallNews">Bądź na bieżąco z kulinarnymi trendami!</p>
+                    <div class="emailHolder" style="padding: 0;">
+                        <form name="newsletterForm" action="#" onsubmit="return newsletterValidate()" method="post">
+                        <input type="text" placeholder="Wpisz swój e-mail" id="newsEmail" name="newsletterEmail" class="text"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                        <input id="newsEmailButton" type="submit" value="Wyślij Zaproszenie" class="button" />
+                         </form>   
+                    </div>
+                    
+                </div>
+                <div class="smNewsletter">
+                    <p>OBSERWUJ NAS</p>
+                    <div><a class="socialMedia" href="#"><img src="socialMedia/facebook.png" /></a></div>
+                    <div><a class="socialMedia" href="#"><img src="socialMedia/youtube.png" /></a></div>
+                    <div><a class="socialMedia" href="#"><img src="socialMedia/instagram.png" /></a></div>
+                    <div><a class="socialMedia" href="#"><img src="socialMedia/pinterest.png" /></a></div>
+                    <div style="clear: both;"></div>
+                </div>
+                
+            </div>
+            
+            <nav class="lowerNav">
+                <div class="lowerNavContainer">
+                    <ol><h4>Rodzaje dań</h4>  
+                        <li><a href="#">Dania główne</a></li>
+                        <li><a href="#">Zupy</a></li>
+                        <li><a href="#">Sałatki</a></li>
+                        <li><a href="#">Desery</a></li>
+                    </ol>
+                    <ol><h4>Rodzaje kuchni</h4> 
+                        <li><a href="#">Polska</a></li>
+                        <li><a href="#">Francuska</a></li>
+                        <li><a href="#">Włoska</a></li>
+                        <li><a href="#">Hiszpańska</a></li>
+                        <li><a href="#">Amerykańska</a></li>
+                        <li><a href="#">Meksykańska</a></li>
+                        <li><a href="#">Azjatycka</a></li>
+                        <li><a href="#">Indyjska</a></li>
+                    </ol>
+                    <ol><h4>Przepisy specjalne</h4> 
+                        <li><a href="#">Wegeańskie</a></li>
+                        <li><a href="#">Bez laktozy</a></li>
+                        <li><a href="#">Bez glutenu</a></li>
+                        <li><a href="#">Fit</a></li>
+                    </ol>
+                    <ol><h4>Inne</h4> 
+                        <li><a href="#">Regulamin</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#">Polityka prywatności</a></li>   
+                </ol>
+                <div style="clear:both;"></div>
+                </div>
+                <span class="rightPreserved">All right have been preserved &copy; </span>
+            </nav>
+
+       </footer>
+
+
+       <!-- my javascripts -->
+
+       <script src="js/menu.js"></script>
+       <script src="js/jquery-3.3.1.min.map" type="text/javascript"></script>
+       <script src="js/footer.js" type="text/javascript" ></script>
+       <script src="js/login.js" type="text/javascript>"></script>
+       <script src="js/userAccount.js" type="text/javascript"></script>
+       <script src="js/new-recipe.js" type="text/javascript"></script>
+      </body>
+	
+</html>

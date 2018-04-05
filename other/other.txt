@@ -1,0 +1,118 @@
+ <div class="recipeContainer">
+                <div class="recipe-box">
+                    <a class="boxImage" href="#">
+                        <img src="img/meal1.jpg" alt="image" />
+                    </a>
+                    <div class="recipe-box-descritpion">
+                        <div class="single-icon">
+                            <i class="icon-thumbs-up"></i>
+                            <p>6</p>
+                        </div>
+                        <div class="single-icon">
+                            <i class="icon-emo-devil"></i>
+                            <p>hard</p>
+                        </div>
+                        <div class="single-icon">
+                            <i class="icon-stopwatch"></i>
+                            <p>25:00</p>
+                        </div>
+                        <div class="single-icon">
+                            <i class="icon-food" style="color: #343434;"></i>
+                            <p>6</p>
+                        </div>
+                    </div>  
+                    <div class="box-lower-desc">
+                        <p class="box-lower-chef">Kamil Imanski</p>
+                        <p class="box-lower-meal">Wielkanocny kawalek pizzy</p>
+                    </div>
+                </div>
+
+                     <!-- starting with the 2nd recipe box etc -->
+                <div class="recipe-box">
+                    <a class="boxImage" href="#">
+                        <img src="img/meal1.jpg" alt="image" />
+                    </a>
+                    <div class="recipe-box-descritpion">
+                        <div class="single-icon">
+                            <i class="icon-thumbs-up"></i>
+                            <p>6</p>
+                        </div>
+                        <div class="single-icon">
+                            <i class="icon-emo-devil"></i>
+                            <p>hard</p>
+                        </div>
+                        <div class="single-icon">
+                            <i class="icon-stopwatch"></i>
+                            <p>25:00</p>
+                        </div>
+                        <div class="single-icon">
+                            <i class="icon-food" style="color: #343434;"></i>
+                            <p>6</p>
+                        </div>
+                    </div>  
+                    <div class="box-lower-desc">
+                        <p class="box-lower-chef">Kamil Imanski</p>
+                        <p class="box-lower-meal">Wielkanocny kawalek pizzy</p>
+                    </div>
+                </div>
+
+
+                <div class="recipe-box">
+                    <a class="boxImage" href="#">
+                        <img src="img/meal1.jpg" alt="image" />
+                    </a>
+                    <div class="recipe-box-descritpion">
+                        <div class="single-icon">
+                            <i class="icon-thumbs-up"></i>
+                            <p>6</p>
+                        </div>
+                        <div class="single-icon">
+                            <i class="icon-emo-devil"></i>
+                            <p>hard</p>
+                        </div>
+                        <div class="single-icon">
+                            <i class="icon-stopwatch"></i>
+                            <p>25:00</p>
+                        </div>
+                        <div class="single-icon">
+                            <i class="icon-food" style="color: #343434;"></i>
+                            <p>6</p>
+                        </div>
+                    </div>  
+                    <div class="box-lower-desc">
+                        <p class="box-lower-chef">Kamil Imanski</p>
+                        <p class="box-lower-meal">Wielkanocny kawalek pizzy</p>
+                    </div>
+                </div>
+
+
+                <div class="recipe-box">
+                    <a class="boxImage" href="#">
+                        <img src="img/meal1.jpg" alt="image" />
+                    </a>
+                    <div class="recipe-box-descritpion">
+                        <div class="single-icon">
+                            <i class="icon-thumbs-up"></i>
+                            <p>6</p>
+                        </div>
+                        <div class="single-icon">
+                            <i class="icon-emo-devil"></i>
+                            <p>hard</p>
+                        </div>
+                        <div class="single-icon">
+                            <i class="icon-stopwatch"></i>
+                            <p>25:00</p>
+                        </div>
+                        <div class="single-icon">
+                            <i class="icon-food" style="color: #343434;"></i>
+                            <p>6</p>
+                        </div>
+                    </div>  
+                    <div class="box-lower-desc">
+                        <p class="box-lower-chef">Kamil Imanski</p>
+                        <p class="box-lower-meal">Wielkanocny kawalek pizzy</p>
+                    </div>
+                </div>
+
+            </div>
+                <!-- the end of recipex container -->
