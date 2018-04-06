@@ -1,3 +1,5 @@
+
+/* container + headers, spaces*/
 #container{
     width: 100%;
     margin:0 auto 0 auto;
@@ -23,6 +25,91 @@
     font-weight: 600;
 }
 
+/* bir recipe that contains icons - "NAJNOWSZE WPISY"  */
+.big-wrapper{
+    width: 1100px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*                trherherthrt*/
+.next-recipe{
+    margin-top: 100px;
+    width: 50px;
+    height:100%;
+    font-size: 40px;
+    font-weight: 900;
+    color: #000;
+    float: right;
+}
+.prev-recipe{
+    width: 50px;
+    font-size: 40px;
+    height:100%;
+    font-weight: 900;
+    color: #000;
+    float:left;
+    margin-top: 100px;
+}
+.next-recipe:hover, .prev-recipe:hover{
+    font-size: 43px;
+    color: #fed716;
+    cursor: pointer;
+}
+
+
+.big-recipe-wrapper {
+    max-width: 230px;
+    height: 250px;
+    margin: 0 20px 20px 0;
+    float:left;
+    box-shadow: 1px 2px 2px 1px #444;
+    background-color: #FDFDFD;
+    -webkit-transition: width  2s ease-in-out;
+    -moz-transition: width height 2s ease-in-out;
+    transition:  height 2s ease-in-out;
+}
+.big-recipe-wrapper:hover{
+    opacity: 0.8;
+    box-shadow: 0.1px 0.2px 0.2px 0.5px #343434;
+}
+/* big recipe image 230*200*/
+.big-recipe-wrapper img{
+    max-width:100%;
+    max-height: 200px ;
+    height: auto;
+}
+.big-recipe-wrapper a{
+    text-decoration: none;
+}
+.big-recipe-wrapper:hover {
+    cursor: pointer;
+}
+.big-recipe-description h3{
+    margin: 5px auto 0 2px;
+    font-size: 20px;
+    font-family:  'Amatic SC', cursive;
+    color: #fed716;
+    text-shadow: 1px 1px 0.5px 0.25px #000;
+    font-weight: 900;
+
+}
+.big-recipe-description p{
+    margin: 5px auto 0 2px;
+    font-size: 16px;
+    font-family:  'Amatic SC', cursive;
+    color: #343434;
+    font-weight: 900;
+    text-shadow: 1px 1px 0.5px 0.25px #000;
+}
+big-recipe-description {
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    margin:0;
+}
+
+/* icons */
 .single-icon{
     width: 24.7%;
     height: 50px;
@@ -59,6 +146,12 @@
     margin-top: 0px;
     font-size: 18px;
 }
+.single-icon:hover {
+    font-size: 26px;
+    font-weight: 900;
+}
+
+/* small recipe wrapper */
 .wrapper{
     width: 1000px;
     height: auto;
@@ -74,7 +167,6 @@
     margin: 0 20px 20px 0;
     float:left;
     box-shadow: 1px 2px 2px 1px #444;
-
     -webkit-transition: width  2s ease-in-out;
     -moz-transition: width height 2s ease-in-out;
     transition:  height 2s ease-in-out;
@@ -98,60 +190,4 @@
     color: #fed716;
     text-shadow: 1px 0.5px 0.25px 1px #000;
     margin: 5px auto 15px 10px;
-}
-
-.big-wrapper{
-    width: 1000px;
-    height: 250px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.big-recipe-wrapper {
-    max-width: 230px;
-    height: 250px;
-    margin: 0 20px 20px 0;
-    float:left;
-    box-shadow: 1px 2px 2px 1px #444;
-    background-color: #fcf2f2;
-    -webkit-transition: width  2s ease-in-out;
-    -moz-transition: width height 2s ease-in-out;
-    transition:  height 2s ease-in-out;
-}
-.big-recipe-wrapper:hover{
-    opacity: 0.8;
-    box-shadow: 0.1px 0.2px 0.2px 0.5px #343434;
-}
-.big-recipe-wrapper img{
-    max-width:100%;
-    max-height: 200px ;
-    height: auto;
-}
-.big-recipe-wrapper a{
-    text-decoration: none;
-}
-.big-recipe-wrapper:hover {
-    cursor: pointer;
-}
-.big-recipe-description h3{
-    margin: 5px auto 0 2px;
-    font-size: 20px;
-    font-family:  'Amatic SC', cursive;
-    color: #fed716;
-    text-shadow: 1px 1px 0.5px 0.25px #000;
-    font-weight: 900;
-
-}
-.big-recipe-description p{
-    margin: 5px auto 0 2px;
-    font-size: 16px;
-    font-family:  'Amatic SC', cursive;
-    color: #343434;
-    font-weight: 900;
-    text-shadow: 1px 1px 0.5px 0.25px #000;
-}
-big-recipe-description {
-    width: 100%;
-    height: auto;
-    min-height: 50px;
-    margin:0;
 }
