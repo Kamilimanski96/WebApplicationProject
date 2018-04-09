@@ -1,0 +1,68 @@
+#contact-container{
+    width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact-container h1{
+    text-align: center;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    color: #353535 ;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+#contact-form{
+    width: 100%;
+    height: auto;
+    border: 2px solid #353535;
+    border-radius: 3px;
+    padding: 20px 20px;
+}
+#contact-form h3{
+    margin: 10px 5px 0 5px;
+    text-align: left;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #353535;
+}
+.input-contact {
+    width: 90%;
+    margin-top: 5px;
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 16px;
+    padding: 8px 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.big{
+    min-height: 150px;
+}
+#contact-send{
+    width: 25%;
+    height: 30px;
+    font-size: 14px;
+    padding: 6px;
+    font-weight:700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: none;
+    float: right;
+    margin-right: none;
+    margin-top: 30px;
+    background-color: #fed716;
+    color: #3d3d3d;
+}
+
+#contact-send span{
+    float:right;
+    margin-right: 10px;
+    font-size: 40px;
+    color: #3d3d3d;
+    transform: rotate(180deg);
+    font-weight: 900;
+}
