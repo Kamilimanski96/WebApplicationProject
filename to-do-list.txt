@@ -1,1 +1,24 @@
+Front-end:
 
+Main menu:
+->Create auto-completion
+
+Add new recipe:
+-> level of difficulty
+->set time frames
+->set number of portions
+-> desc description max lenght
+-> add picture rebuild
+-> add optional -> the origin of the cuisine
+-> add optional -> type-of-meal 
+
+Single-recipe rebuild:
+-> js -> picture change
+
+Search Recipe:
+->Add recipe container
+
+
+User Account:
+-> create added recipe container,
+-> create favourite recipe container
