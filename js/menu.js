@@ -18,3 +18,21 @@ function myFunction() {
 
 
 
+//creating a tags for menu
+$(document).ready(function(){
+  var availableTags = [
+    "włoska",
+    "polska"
+
+
+  ];
+
+ // availableTags.classList.add("#tags");
+
+
+  $("#navSearch").autocomplete({
+    source : availableTags
+  });
+  availableTags.classList.add("#tags");
+});
+
