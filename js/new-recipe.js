@@ -120,3 +120,17 @@ function loadImageFiles() {
 }
 loadImageFiles();
 */
+
+// liczba porcjiu
+
+var selectPortions = document.getElementById("select-number-of-portions");
+//var opt = document.createElement("OPTION");
+var counter=1;
+
+for(counter; counter<=12; counter++){
+  var opt = document.createElement("OPTION");
+  var txt = document.createTextNode(counter);
+  opt.appendChild(txt);
+  selectPortions.appendChild(opt);
+}
+
