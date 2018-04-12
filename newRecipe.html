@@ -200,29 +200,54 @@
                     <textarea  id="recipe-description-textarea" placeholder="opis dania" ></textarea>
                 </div>
                 <div class="new-recipe-right-info">
-                    <h3>Rodzaj diety</h3>
-                    <input type="checkbox" name="vegan">Vege/Wegetarian<br/>
-                    <input type="checkbox" name="lacto">Bez laktozy<br/>
-                    <input type="checkbox" name="gluten">Bez glutenu<br/>
-                    <input type="checkbox" name="paleo">Paleo
-                </div>
+                    <form id="form-diet-type" class="form-right-description">
+                        <label>Rodzaj diety</label>
+                        <select >
+                            <option value="vegan">Wegetariańska</option>
+                            <option value="lactose">Bez Laktozy</option>
+                            <option value="glute">Bez glutenu</option>
+                            <option value="paleo">Paleo</option>
+                        </select><br/>
+                    </form>
+                    <form id="form-cuisine-type" class="form-right-description">
+                        <label>Typ kuchni</label>
+                        <select>
+                            <option value="polish" >Polska</option>
+                            <option value="czech">Czeska</option>
+                            <option value="italian">Włoska</option>
+                            <option value="french">Francuska</option>
+                            <option value="spanish">Hiszpańska</option>
+                            <option value="mexican">Meksykańska</option>
+                            <option value="american">Amerykańska</option>                                
+                            <option value="asian">Azjatycjka</option>
+                            <option value="others" selected>Inne</option>
+                         </select><br/>
+                    </form>
+                    <form id="form-difficulty" class="form-right-description">
+                        <label>Poziom trudności</label>
+                        <select>
+                            <option value="easy">Łatwy</option>
+                            <option value="medium">Średni</option>
+                            <option value="hard">Trudny</option>
+                        </select><br/>
+                    </form>
+                    <form id="form-prep-time" class="form-right-description">
+                        <label>Czas trwania</label>
+                        <select> 
+                            <option>&lt 0:15</option>
+                            <option>0:15-0:30</option>
+                            <option>0:30-1:00</option>
+                            <option>1:00-1:30</option>
+                            <option>&gt 1:30</option>
+                        </select><br/>
+                    </form>
+                    <form id="form-number-of-portions" class="form-right-description">
+                        <label>Liczba gości</label>
+                        <select id="select-number-of-portions"></select>
+                    </form>    
+                </div>    
+              
                 <div style="clear:both;margin:20px;"></div>
-                <hr  />
-
-                <div class="necessary-ingridients">
-                    <h1>Potrzebne składniki</h1>
-                    <div id="ing-header">
-                        <input type="text" class="ingridients-input" id="ingridient-input" placeholder="Następny składnik">
-                        <span onclick="newElement()" class="addBtn">Dodaj</span>
-                    </div>
-
-                    <div style="clear:both;margin:50px;width:100%;"></div>
-
-                    <ul id="list-of-ingridients">
-                    </ul>
-
-                </div>
-               <div style="clear:both;width:100%;margin-top:50px;"></div>
                 <hr  />
 
 
