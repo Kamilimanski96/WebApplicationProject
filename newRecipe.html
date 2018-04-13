@@ -205,8 +205,9 @@
                         <select >
                             <option value="vegan">Wegetariańska</option>
                             <option value="lactose">Bez Laktozy</option>
-                            <option value="glute">Bez glutenu</option>
+                            <option value="gluten">Bez glutenu</option>
                             <option value="paleo">Paleo</option>
+                            <option value="others">others</option>
                         </select><br/>
                     </form>
                     <form id="form-cuisine-type" class="form-right-description">
@@ -223,6 +224,16 @@
                             <option value="others" selected>Inne</option>
                          </select><br/>
                     </form>
+                    <form id="meal-type" class="form-right-description">
+                        <label>Czas trwania</label>
+                        <select> 
+                            <option value="breakfast">Sniadanie</option>
+                            <option value="lunch">Danie główne</option>
+                            <option value="dessert">kolacja</option>
+                            <option value="dinner">Deser</option>
+                            <option value="soup">Zupa</option>
+                        </select><br/>
+                    </form>
                     <form id="form-difficulty" class="form-right-description">
                         <label>Poziom trudności</label>
                         <select>
@@ -234,11 +245,11 @@
                     <form id="form-prep-time" class="form-right-description">
                         <label>Czas trwania</label>
                         <select> 
-                            <option>&lt 0:15</option>
-                            <option>0:15-0:30</option>
-                            <option>0:30-1:00</option>
-                            <option>1:00-1:30</option>
-                            <option>&gt 1:30</option>
+                            <option value="<0:15">&lt 0:15</option>
+                            <option value="0:15-0:30">0:15-0:30</option>
+                            <option value="0:30-1:00">0:30-1:00</option>
+                            <option value="1:00-1:30">1:00-1:30</option>
+                            <option value=">1:30">&gt 1:30</option>
                         </select><br/>
                     </form>
                     <form id="form-number-of-portions" class="form-right-description">
