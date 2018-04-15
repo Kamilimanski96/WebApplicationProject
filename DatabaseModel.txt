@@ -1,0 +1,84 @@
+
+
+Create table RecipeComment
+(
+comment_id int(5) not null,
+comment_date datetime not null,
+comment_mark int(1) not null,
+user_id int not null,
+recipe_id int not null,
+
+primary key (comment_id),
+foreign key (user_id) references RecipeUser(user_id) on delete cascade,
+foreign key (recipe_id) references Recipe(recipe_id) on delete cascade
+);
+
+Create table Recipe
+(
+recipe_id int(5) not null,
+recipe_name varchar(255) not null,
+recipe_desc longtext,
+like_counter int(4),
+recipe_mak int(1),
+recipe_date datetime,
+cuisine_type varchar(255) not null,
+prep_time varchar(20) not null,
+prep_difficulty varchar(10) not null,
+meal_type varchar(50) not null,
+diet_type varchar(30) not null,
+number_of_portions int(2) not null,
+recipe_picture_id int,
+ingridient_id int,
+step_id int,
+user_id int,
+ 
+primary key (recipe_id),
+foreign key (step_id) references RecipeStep(step_id) on delete no action,
+foreign key (ingridient_id) references RecipeIngridient(ingridient_id) on delete no action ,
+foreign key (picture_id) references RecipePicture(picture_id) on delete set null,
+foreign key (user_id) references RecipeUser(user_id) on delete no action,
+
+
+check (recipe_mark between 1 and 5),
+check (cuisine_type in ('polish','czech','italian','french','spanish','mexican','american','asian','others')),
+check (diet_type in ('vegan','lactose','gluten','paleo', 'others')),
+check (prep_difficulty in ('easy', 'medium', 'hard')),
+check (prep_time in ('<0:15','0:15-0:30','0:30-1:00','1:00-1:30','>1:30')),
+check (number_of_portions between 1 and 12 ),
+check (meal_type in ('breakfast', 'lunch','dessert','dinner','soup'))
+
+);
+
+
+Create table RecipeStep
+(
+step_id int(5) not null,
+step_desc longtext not null,
+primary key (step_id)
+);
+
+Create Table RecipeIngridient
+(
+ingridient_id int(5) not null,
+ingridient_name varchar(255) not null,
+primary key (ingridient_id)
+);
+
+Create Table RecipePicture
+(
+picture_id int(5) not null,
+picture_url varchar(255) not null,
+primary key (picture_id)
+);
+Create Table RecipeFavourites
+(
+user_id int,
+recipe_id int,
+
+primary key (user_id, recipe_id ),
+foreign key (user_id) references RecipeUser(user_id) on delete cascade,
+foreign key (recipe_id) references Recipe(recipe_id) on delete cascade
+);
+
+
+
